@@ -9,13 +9,7 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ---
 
 ### 1. 🏠 Home & Executive Dashboard
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│               [ 01-home-dashboard.png ]                 │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+  <img src="https://i.ibb.co.com/v6fL8cB5/1st.png" width="450"/>
 
 ---
 
