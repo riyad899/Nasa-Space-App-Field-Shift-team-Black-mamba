@@ -1,0 +1,24 @@
+{
+  "name": "nasa-space-app-field-shift",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NASA Space Apps Challenge - Field Shift (Team Black Mamba)",
+  "workspaces": [
+    "client",
+    "server",
+    "esp32-iot-server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:iot": "npm run dev --workspace=esp32-iot-server",
+    "build:client": "npm run build --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "start:client": "npm run start --workspace=client",
+    "start:server": "npm run start --workspace=server",
+    "start:iot": "npm run start --workspace=esp32-iot-server"
+  },
+  "keywords": [],
+  "author": "Team Black Mamba",
+  "license": "ISC"
+}

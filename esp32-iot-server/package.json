@@ -1,0 +1,28 @@
+{
+  "name": "esp32-iot-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install",
+    "start": "node server.js",
+    "dev": "node server.js",
+    "vercel-build": "echo 'Vercel build complete'",
+    "migrate": "node scripts/migrate.js",
+    "test": "node --check server.js && node tests/test_relay.js && node tests/test_water_level.js",
+    "test:relay": "node tests/test_relay.js",
+    "test:water": "node tests/test_water_level.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "@supabase/supabase-js": "^2.117.2",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "pg": "^8.23.1"
+  }
+}

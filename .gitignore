@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# Environment variables (ignore all .env files across all folders, keep .env.example)
+.env
+.env.*
+*.env
+*.env.local
+*/**/.env
+*/**/.env.*
+*/**/.env.local
+!*.env.example
+!*/**/.env.example
+
+# Build & output directories
+dist/
+build/
+out/
+.next/
+*/**/dist/
+*/**/build/
+*/**/out/
+*/**/.next/
+
+# Testing & Coverage
+coverage/
+*/**/coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# System & IDE files
+.DS_Store
+*/**/.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript & Next.js cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel & Deployments
+.vercel
+*/**/.vercel
+
+# Prisma generated outputs if applicable
+generated/prisma/
+src/generated/
+*/**/generated/prisma/
+*/**/src/generated/

@@ -1,0 +1,354 @@
+{
+  "info": {
+    "_postman_id": "a5e8f49a-7c21-4f11-9a45-66778899aabb",
+    "name": "ESP32 IoT Cloud Connect API (Open - Zero Headers Needed)",
+    "description": "Completely open Postman collection for ESP32 IoT Server (Multi-Sensor Telemetry, soilMoistureRaw, rainSensorRaw, GPS, and 2-Channel Relay Control). No device key or auth headers needed.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://esp32-iot-cloude-connect.vercel.app",
+      "type": "string"
+    },
+    {
+      "key": "deviceId",
+      "value": "esp32-001",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "0. Device Authentication & Connection",
+      "item": [
+        {
+          "name": "POST Device Auth & Connect (Key + Name)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"{{deviceId}}\",\n  \"name\": \"ESP32 Agricultural Master\",\n  \"key\": \"102030\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/device/auth",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "auth"]
+            }
+          }
+        },
+        {
+          "name": "GET Device Auth & Connection Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/auth?deviceId={{deviceId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "auth"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "{{deviceId}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "1. Multi-Sensor Telemetry",
+      "item": [
+        {
+          "name": "POST Multi-Sensor Telemetry (soilMoistureRaw, rainSensorRaw, GPS)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"{{deviceId}}\",\n  \"temperature\": 28.5,\n  \"humidity\": 65,\n  \"soilMoistureRaw\": 1840,\n  \"rainSensorRaw\": 3200,\n  \"gpsValid\": true,\n  \"latitude\": 23.8103,\n  \"longitude\": 90.4125,\n  \"altitude\": 12.4,\n  \"satellites\": 8\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/device/data",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "data"]
+            }
+          }
+        },
+        {
+          "name": "POST Telemetry with Null/Omitted DHT11 (Read Failure Safe)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"{{deviceId}}\",\n  \"temperature\": null,\n  \"humidity\": null,\n  \"soilMoistureRaw\": 1850,\n  \"rainSensorRaw\": 3190,\n  \"gpsValid\": true,\n  \"latitude\": 23.8103,\n  \"longitude\": 90.4125,\n  \"altitude\": 12.4,\n  \"satellites\": 8\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/device/data",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "data"]
+            }
+          }
+        },
+        {
+          "name": "GET Latest Sensor Reading",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/data/latest?deviceId={{deviceId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "data", "latest"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "{{deviceId}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Relay Control (2-Channel)",
+      "item": [
+        {
+          "name": "GET Poll Relay Commands",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/relay/command?deviceId={{deviceId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "relay", "command"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "{{deviceId}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST Set Both Relays ON",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"{{deviceId}}\",\n  \"relay1\": \"ON\",\n  \"relay2\": \"ON\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/device/relay",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "relay"]
+            }
+          }
+        },
+        {
+          "name": "POST Set Both Relays OFF",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"{{deviceId}}\",\n  \"relay1\": \"OFF\",\n  \"relay2\": \"OFF\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/device/relay",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "relay"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Heartbeat & Status",
+      "item": [
+        {
+          "name": "POST Device Heartbeat",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"{{deviceId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/device/heartbeat",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "heartbeat"]
+            }
+          }
+        },
+        {
+          "name": "GET Device Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/status?deviceId={{deviceId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "status"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "{{deviceId}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. ESP-12F Water Level Monitoring",
+      "item": [
+        {
+          "name": "POST Water Level Telemetry (esp12f-water-001)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"deviceId\": \"esp12f-water-001\",\n  \"sensorValid\": true,\n  \"distanceCm\": 25.4,\n  \"waterLevelCm\": 74.6,\n  \"waterLevelPercent\": 74.6\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/device/data",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "data"]
+            }
+          }
+        },
+        {
+          "name": "GET Latest Water Level Reading",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/data/latest?deviceId=esp12f-water-001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "data", "latest"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "esp12f-water-001"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET Water Level History",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/water-level/history?deviceId=esp12f-water-001&limit=20",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "water-level", "history"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "esp12f-water-001"
+                },
+                {
+                  "key": "limit",
+                  "value": "20"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET ESP-12F Device Status (Online/Offline)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/status?deviceId=esp12f-water-001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "status"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "esp12f-water-001"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET ESP-12F Device Auth & Registration Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/device/auth?deviceId=esp12f-water-001",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "device", "auth"],
+              "query": [
+                {
+                  "key": "deviceId",
+                  "value": "esp12f-water-001"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
