@@ -4,7 +4,7 @@
 **An AI-powered, climate-resilient agricultural decision-support platform that transforms NASA Earth observation data, historical environmental records, statistical modeling, and IoT-based field measurements into actionable agricultural insights.**
 
 <p align="center">
-  <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794494911/CropWise_AI_Logo_1.png" alt="CropWise AI Logo" width="180"/>
+  <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794494911/CropWise_AI_Logo_1.png" alt="CropWise AI Logo" width="450"/>
 </p>
 
 <p align="center">
@@ -165,7 +165,7 @@ We gratefully acknowledge the NASA Earth Science Division and open data platform
 This project is developed for educational, research, and climate-resilience innovation purposes under the [MIT License](LICENSE).
 
 <p align="center">
-  <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794494911/CropWise_AI_Logo_1.png" alt="CropWise AI Logo" width="120"/>
+  <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794494911/CropWise_AI_Logo_1.png" alt="CropWise AI Logo" width="220"/>
   <br/><br/>
   <b>CropWise AI · Team Black Mamba</b><br/>
   <i>Earth Data. Local Impact. Stronger Farms.</i><br/>
