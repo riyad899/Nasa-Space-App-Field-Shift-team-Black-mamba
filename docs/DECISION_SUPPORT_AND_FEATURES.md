@@ -40,3 +40,4 @@ Identifies composite hazards by synthesizing environmental indicators:
 ---
 
 [← Back to Main README](../README.md) • [Next: Workflow & Limitations →](WORKFLOW_AND_LIMITATIONS.md)
+

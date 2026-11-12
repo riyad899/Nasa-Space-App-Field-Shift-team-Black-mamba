@@ -60,3 +60,4 @@ CropWise AI provides REST APIs powering IoT ingestion, historical database queri
 ---
 
 [← Back to Main README](../README.md) • [Next: Key Features & Decision Support →](DECISION_SUPPORT_AND_FEATURES.md)
+

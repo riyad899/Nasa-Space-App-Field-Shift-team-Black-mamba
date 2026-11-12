@@ -130,3 +130,4 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ---
 
 [← Back to Main README](../README.md)
+
