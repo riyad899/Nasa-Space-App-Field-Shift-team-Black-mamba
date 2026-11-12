@@ -14,112 +14,54 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ---
 
 ### 2. 🌡️ Climate Intelligence & Historical Trends
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│               [ 02-climate-analysis.png ]               │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/zH5Wgm98/9-climate-analysis.png" width="450"/>
 
 ---
 
 ### 3. 🌿 Environmental Overview & Multi-Index Monitoring
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│            [ 03-environmental-overview.png ]            │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/q30GB8mQ/4.png" width="450"/>
 
 ---
 
 ### 4. 🗺️ Geospatial Map Visualization
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│              [ 04-map-visualization.png ]               │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/21wxYbXk/13.png" width="450"/>
 
 ---
 
 ### 5. 🔄 Data Fusion (Satellite vs. Ground In-Situ)
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│                 [ 07-data-fusion.png ]                  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/DPRSVwZ5/16.png" width="450"/>
 
 ---
 
 ### 6. 🔌 ESP32 IoT Device & Real-Time Telemetry
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│              [ 08-iot-device-overview.png ]             │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
+<p>
+   <img src="https://i.ibb.co.com/v6fL8cB5/1st.png" width="450"/>
+ <img src="https://i.ibb.co.com/35xXKc5v/Relay-Control-Enclosure-with-LCD-Display.png" width="450"/>
+</p>
 ---
 
 ### 7. 📊 Statistical Intelligence & Modeling
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│           [ 10-statistical-intelligence.png ]           │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/Rkn5rhRp/18.png" width="450"/>
 
 ---
 
 ### 8. 📐 Correlation Matrix & OLS Regression
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│          [ 11-correlation-and-regression.png ]          │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/Myb4s7qc/24.png" width="450"/>
 
 ---
 
 ### 9. 🧩 PCA Variance & K-Means Clusters
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│               [ 13-pca-and-clustering.png ]             │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/Myb4s7qc/24.png" width="450"/>
 
 ---
 
 ### 10. 🤖 AI Agronomic Assistant & Explanations
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│                [ 17-ai-assistant.png ]                  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/LX2nFJPS/Screenshot-2026-11-12-at-9-51-38-PM.png" width="450"/>
 
 ---
 
 ### 11. 🌾 Climate-Smart Crop Rotation & Recommendations
-```
-┌─────────────────────────────────────────────────────────┐
-│                                                         │
-│            [ 18-crop-recommendations.png ]              │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+ <img src="https://i.ibb.co.com/dJ290X6h/Screenshot-2026-11-12-at-9-52-11-PM.png" width="450"/>
 
 ---
 
