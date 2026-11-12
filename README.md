@@ -6,7 +6,7 @@
 <p align="center">
   <!-- Logo frame placeholder -->
   <br/>
-  <b>https://res.cloudinary.com/ogmllguj/image/upload/v1794493978/CropWise_AI_Logo-removebg-preview.png</b>
+  <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794493978/CropWise_AI_Logo-removebg-preview.png/>
   <br/><br/>
 </p>
 
