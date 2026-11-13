@@ -41,7 +41,7 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ---
 
 ### 7. 📊 Statistical Intelligence & Modeling
- <img src="https://i.ibb.co.com/Rkn5rhRp/18.png" width="450"/>
+ <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794552884/18.png" width="450"/>
 
 ---
 
