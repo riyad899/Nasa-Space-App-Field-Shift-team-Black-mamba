@@ -35,7 +35,7 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 
 ### 6. 🔌 ESP32 IoT Device & Real-Time Telemetry
 <p>
-   <img src="https://i.ibb.co.com/v6fL8cB5/1st.png" width="450"/>
+
  <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794552823/Relay_Control_Enclosure_with_LCD_Display_1.png" width="450"/>
 </p>
 ---
