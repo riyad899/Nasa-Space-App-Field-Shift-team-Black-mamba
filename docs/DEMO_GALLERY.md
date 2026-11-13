@@ -29,7 +29,7 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ---
 
 ### 5. 🔄 Data Fusion (Satellite vs. Ground In-Situ)
- <img src="https://i.ibb.co.com/DPRSVwZ5/16.png" width="450"/>
+ <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794552697/16.png" width="450"/>
 
 ---
 
