@@ -14,7 +14,7 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ---
 
 ### 2. 🌡️ Climate Intelligence & Historical Trends
- <img src="https://i.ibb.co.com/zH5Wgm98/9-climate-analysis.png" width="450"/>
+ <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794552653/9_climate_analysis.png" width="450"/>
 
 ---
 
