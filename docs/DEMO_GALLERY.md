@@ -24,7 +24,7 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ---
 
 ### 4. 🗺️ Geospatial Map Visualization
- <img src="https://i.ibb.co.com/21wxYbXk/13.png" width="450"/>
+ <img src="https://res.cloudinary.com/ogmllguj/image/upload/v1794552772/13.png" width="450"/>
 
 ---
 
