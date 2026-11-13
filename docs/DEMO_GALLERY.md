@@ -53,17 +53,7 @@ This gallery presents the CropWise AI web interface. Replace the placeholder con
 ### 9. 🧩 PCA Variance & K-Means Clusters
  <img src="https://i.ibb.co.com/Myb4s7qc/24.png" width="450"/>
 
----
 
-### 10. 🤖 AI Agronomic Assistant & Explanations
- <img src="https://i.ibb.co.com/LX2nFJPS/Screenshot-2026-11-12-at-9-51-38-PM.png" width="450"/>
-
----
-
-### 11. 🌾 Climate-Smart Crop Rotation & Recommendations
- <img src="https://i.ibb.co.com/dJ290X6h/Screenshot-2026-11-12-at-9-52-11-PM.png" width="450"/>
-
----
 
 [← Back to Main README](../README.md)
 
